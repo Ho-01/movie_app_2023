@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+.title {
+    position: absolute;
+    display: block;
+    font-weight: bolder;
+}
+
 .loader {
     width: 100%;
     height: 100vh;
@@ -15,8 +21,8 @@
 
 .movies {
     display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-gap: 100px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 50px;
     padding: 50px;
     width: 80%;
     padding-top: 70px;

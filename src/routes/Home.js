@@ -3,6 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import Movie from '../components/Movie';
 import './Home.css';
+import Slinky from '../components/Slinky';
 
 class Home extends React.Component {
   state = {
@@ -28,10 +29,13 @@ class Home extends React.Component {
     const { isloading , movies } = this.state;
     return ( 
       <section className='container'>
+        <div>
+          <h1 className='title'>Movie App 2023 by Ho_01</h1>
+        </div>
         {isloading
         ? (
           <div className='loader'>
-            <span className='loader__text'>Loading...</span>
+            <Slinky />
           </div>
         )
         : (
